@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS</title>
+</head>
+<body>
+    <div class="wrapp">
+    <h1>Индекс массы тела</h1>
+    <p>Индекс массы тела — величина, позволяющая оценить степень соответствия массы человека и его роста и тем самым косвенно судить о том, является ли масса недостаточной, нормальной или избыточной. Определить индекс массы тела, или индекс Кетле, можно по формуле:  </p>
+    <p class="formula"> ИМТ = вес(кг) / рост(м)<sup>2</sup>.</p>
+    <!--<h2>Ваш возраст:</h2>
+    <input type="text" name="" id="num3">
+      <div class="row">
+    <input type="radio" name="year" id="young" value="1" >
+    <label for="young">19 - 24</label>
+      <input type="radio" name="year" id="young1" value="2"> 
+      <label for="young1" >25 - 34</label>
+      <input type="radio" name="year" id="big" value="3">
+      <label for="big">35 - 44</label>
+      <input type="radio" name="year" id="middle" value="4">
+      <label for="middle">45 - 54</label>
+      <input type="radio" name="year" id="middle1" value="5">
+      <label for="middle1">55 - 64</label>
+      <input type="radio" name="year" id="old" value="6">
+      <label for="old">старше 65</label>
+    </div>-->
+    <h2 class="title">Калькулятор индекса массы тела (ИМТ)</h2>
+    <div class="imt_wrapp">
+      <form action="" id="form_imt" name="myForm">
+ <div><label>Ваш вес, в кг.</label>
+<input type="text" name="elem" id="num1">
+ </div>
+ <div id="error"></div>
+<div><label>Вас рост, в см.</label>
+<input type="text" name="elem1" id="num2" >
+</div>
+<div id="error1"></div>
+<button id="button" >Рассчитать</button>
+</form>
+
+<div class="wrapp_table none ">
+  <a id="next"  href="#">
+    <img src="./img/back-arrow.svg" alt="arrow">
+    Назад</a>
+<p class="text__result">Ваш ИМТ составляет: <span id="result"></span></p>
+<p id="str"></p>
+<p class="text__result">Рекомендуемый весовой диапазон: от <span id="text"> </span> до <span id="text1"> </span></p>
+  <table id ="customers">
+  
+      <th>ИМТ</th>
+     <th>Значение </th> </tr>
+     <tr>
+      <td>16 и менее</td>
+      <td>выраженный дефицит массы тела</td>
+     </tr>
+    <tr>
+      <td>16-18,5</td>
+      <td>дефицит массы тела</td>
+    </tr>
+    <tr>
+      <td>18,5–24,99</td>
+      <td> нормальная масса тела</td>
+    </tr>
+    <tr>
+      <td>25–29,99</td>
+      <td> избыточная масса тела</td>
+    </tr>
+    <tr>
+      <td> 30–34,99</td>
+      <td>	ожирение I степени</td>
+    </tr>
+    <tr>
+      <td>35–39,99</td>
+      <td>ожирение II степени</td>
+    </tr>
+    <tr>
+      <td> 40	и более</td>
+      <td>ожирение III степени</td>
+    </tr>
+  </table>
+
+<p>
+  Риск сердечно-сосудистых и многих других заболеваний существенно возрастает, если ИМТ человека выше 27. Если ИМТ больше 30, это уже считается ожирением. Ожирение – это ситуация, при которой количество жира в организме увеличено до такой степени, что это серьезно сказывается на состоянии здоровья.</p>
+  
+  <p>Например, для человека ростом 170 см нормальная масса тела составляет 54–72 кг, что является довольно большим диапазоном. У молодых людей вес мог бы быть ближе к нижней границе диапазона, у пожилых – к верхней.
+  
+    Поскольку кости у мужчин более плотные и прочные, чем у женщин, их нормальный вес тоже несколько больше женского. Избыточный вес или начальная стадия ожирения у человека ростом 170 см отмечается тогда, когда он весит 73–87 кг, ожирение – когда еще больше. </p>
+  
+ <p>Констатация факта ожирения с помощью ИМТ не во всех случаях на 100 % верна. Например, спортсмены, имеющую большую мышечную массу, по этой классификации оказываются имеющими избыточный вес. Поэтому ожирение можно оценивать и по обхвату талии и бедер. У женщин рекомендуемый обхват талии должен быть меньше 88 см, у мужчин – меньше 102 см. Если соотношение обхвата талии и обхвата бедер (одно деленное на другое) у мужчин больше 1, а у женщин больше 0,8, – это указывает на ожирение.</p> 
+ <p>Получить рекомендации по правильному питанию Вы сможете у вашего участкового врача общей практики.</p>
+
+
+</div>
+</div>
+</div>
+
+<script src="./js/main.js"></script>  
+<script src="./js/polyfill.js"></script>  
+</body>
+</html>
