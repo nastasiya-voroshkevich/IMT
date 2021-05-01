@@ -74,7 +74,7 @@ form {
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 10px;
-    margin: 0 auto;
+    margin: 0 45px;
     align-content: center;
   }
   .text__result {
@@ -89,7 +89,7 @@ form {
     align-items: flex-start;
   }
   .formula {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     padding: 5px;
   }
