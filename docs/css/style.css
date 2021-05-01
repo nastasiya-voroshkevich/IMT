@@ -39,8 +39,10 @@ form {
     padding-bottom: 10px;
     margin: 0 auto;
     align-content: center;
+    white-space: nowrap;
   }
   .formula {
+    white-space: nowrap;
     text-align: center;
     font-weight: 500;
     border: 1px solid black;
@@ -76,6 +78,7 @@ form {
     padding-bottom: 10px;
     margin: 0 auto;
     align-content: center;
+    justify-content: center;
   }
   .wrapp {
     display: flex;
@@ -88,7 +91,7 @@ form {
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
-    text-align: justify;
+    justify-content: center;
   }
 }
 
