@@ -77,6 +77,10 @@ form {
     margin: 0 auto;
     align-content: center;
   }
+  .text__result {
+    font-size: 16px;
+  
+  }
   .wrapp {
     display: flex;
     flex-direction: column;
@@ -85,7 +89,8 @@ form {
     align-items: flex-start;
   }
   .formula {
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
     padding: 5px;
   }
 }
@@ -134,6 +139,7 @@ form {
 }
 @media (min-width: 856px) {
   .formula {
+    font-size: 25px;
     font-weight: 900;
     padding: 10px;
   }
