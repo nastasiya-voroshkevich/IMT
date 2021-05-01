@@ -134,7 +134,7 @@ form {
   #str,
   #result,
   #text,
-  #text1 {
+  .text__result {
     font-size: 20px;
   }
 }
