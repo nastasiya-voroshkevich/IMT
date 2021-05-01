@@ -39,10 +39,9 @@ form {
     padding-bottom: 10px;
     margin: 0 auto;
     align-content: center;
-    white-space: nowrap;
+   
   }
   .formula {
-    white-space: nowrap;
     text-align: center;
     font-weight: 500;
     border: 1px solid black;
@@ -58,6 +57,14 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 }
+@media (min-width: 380px) {
+  .text__result,
+  #str,
+  #text {
+   white-space: nowrap;
+  }
+}
+
 @media (min-width: 768px) {
   .imt_wrapp {
     margin: 45px auto;
@@ -79,6 +86,7 @@ form {
     margin: 0 auto;
     align-content: center;
     justify-content: center;
+    white-space: nowrap;
   }
   .wrapp {
     display: flex;
@@ -88,6 +96,7 @@ form {
     align-items: flex-start;
   }
   .formula {
+    white-space: nowrap;
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
