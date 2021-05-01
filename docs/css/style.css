@@ -85,7 +85,7 @@ form {
     align-items: flex-start;
   }
   .formula {
-    font-weight: 900;
+    font-weight: 700;
     padding: 10px;
   }
 }
@@ -119,7 +119,6 @@ form {
   }
 }
 
-
 @media (min-width: 768px) {
   .title {
     margin: 40px auto 0;
@@ -131,15 +130,13 @@ form {
     line-height: normal;
     text-align: justify;
   }
-  #str,
-  #result,
-  #text,
-  .text__result {
-    font-size: 20px;
-  }
+ 
 }
 @media (min-width: 856px) {
- 
+  .formula {
+    font-weight: 900;
+    padding: 10px;
+  }
   #str,
   #result,
   #text,
