@@ -110,6 +110,16 @@ form {
     text-align: justify;
   }
 }
+@media (min-width: 450px) {
+  #str,
+  #result,
+  #text,
+  #text1 {
+    font-size: 16px;
+  }
+}
+
+
 @media (min-width: 768px) {
   .title {
     margin: 40px auto 0;
@@ -121,6 +131,15 @@ form {
     line-height: normal;
     text-align: justify;
   }
+  #str,
+  #result,
+  #text,
+  #text1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 856px) {
+ 
   #str,
   #result,
   #text,
