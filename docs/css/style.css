@@ -89,7 +89,7 @@ form {
     align-items: flex-start;
   }
   .formula {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     padding: 5px;
   }
@@ -126,7 +126,7 @@ form {
 
 @media (min-width: 768px) {
   .title {
-    margin: 40px auto 0;
+    margin: 0 45px ;
     font-size: 24px;
   }
   p,
@@ -147,6 +147,7 @@ form {
   #result,
   #text,
   #text1 {
+    margin: 0 45px ;
     font-size: 25px;
   }
 }
