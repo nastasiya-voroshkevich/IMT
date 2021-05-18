@@ -4,14 +4,14 @@ var elem1 = form.elements.elem1;
 var meaning = document.querySelector("#str");
 var table = document.querySelector(".wrapp_table");
 var form = document.querySelector("#form_imt");
-
+//debugger;
 function IMT() {
   var button = document.querySelector("#button");
   var result =
     Number(elem.value) / (Number(elem1.value) * Number(elem1.value) * 0.0001);
   var num1Min = Number(elem1.value) * Number(elem1.value) * 0.0001 * 18.5;
   var num1Max = Number(elem1.value) * Number(elem1.value) * 0.0001 * 24.99;
-
+ 
   document.getElementById("result").innerHTML = result.toFixed(2);
   document.getElementById("text").innerHTML = num1Min.toFixed(2);
   document.getElementById("text1").innerHTML = num1Max.toFixed(2);
@@ -115,11 +115,9 @@ elem1.onfocus = function () {
     document.getElementById("error1").innerHTML = "";
   }
 };
-form.addEventListener("submit", (e) => {
+debugger;
+form.onsubmit = function(e) {
   e.preventDefault();
-});
-
-button.onclick = function () {
   if (!elem.value || !Number(elem.value)) {
     elem.classList.add("invalid");
     document.getElementById("error").innerHTML =
@@ -141,6 +139,29 @@ button.onclick = function () {
     IMT();
   }
 };
+/*
+button.onclick = function () {
+  if (!elem.value || !Number(elem.value)) {
+    elem.classList.add("invalid");
+    document.getElementById("error").innerHTML =
+      "Введите корректное значение веса.";
+  } else {
+    elem.classList.remove("invalid");
+    document.getElementById("error").innerHTML = "";
+  }
+  if (!elem1.value || !Number(elem1.value)) {
+    elem1.classList.add("invalid");
+    document.getElementById("error1").innerHTML =
+      "Введите корректное значение роста.";
+  } else {
+    elem1.classList.remove("invalid");
+    document.getElementById("error1").innerHTML = "";
+  }
+
+  if (Number(elem.value) && Number(elem1.value)) {
+    IMT();
+  }
+};*/
 
 next.onclick = function () {
   document.forms.myForm.reset();
